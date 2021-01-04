@@ -32,10 +32,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
-         with:
+        with:
           node-version: 12
       - name: Install Surge
         run: npm install -g surge
-        name: Run Surge
+      - name: Run Surge
         run: surge ./ classified-Ads-website-by-ghulalm-mustafa.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
