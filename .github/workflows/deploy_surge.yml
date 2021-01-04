@@ -37,5 +37,5 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
         name: Run Surge
-        run: surge ./ classified-Ads-website-by-ghulalm-mustafa.surge.sh --token$ {{secrets.SURGE_TOKEN}}
+        run: surge ./ classified-Ads-website-by-ghulalm-mustafa.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
